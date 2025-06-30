@@ -64,7 +64,7 @@ jobs:
       run: docker login ghcr.io -u Ganumedesz -p ${{ github.token }}
 
     - name: Build docker
-      run: docker build . --file Dockerfile --tag ghcr.io/Ganumedesz/cubix/cloudnative/demo:actions
+      run: docker build . --file Dockerfile --tag ghcr.io/ganumedesz/cubix/cloudnative/demo:actions
 
     - name: Publish docker
-      run: docker push ghcr.io/Ganumedesz/cubix/cloudnative/demo:actions
+      run: docker push ghcr.io/ganumedesz/cubix/cloudnative/demo:actions
